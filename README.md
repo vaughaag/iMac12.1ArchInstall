@@ -5,7 +5,7 @@
 ### Created at the request from Linux on Mac FB Group. Although this guide is for the iMac 12,1, it should work for all 12x and 13x iMacs as the hardware/drivers are similar generations.
 ---
 
-### This guide will use the Arch Linux install script now bundled with Arch as it is far easier to use with little need to erro/fault find. If comfortable installing Arch without thi tool, skip to step XX
+### This guide will use the Arch Linux install script now bundled with Arch as it is far easier to use with little need to error/fault find. If comfortable installing Arch without this tool, skip to step [Two](#step-two---install-drivers-and-apps)
 ---
 ```diff
 + An ethernet connection will be required during the process as the iMac's wireless does not always work using iwctl, especially with recent releases. If you do not have access to an ethernet connection, check the wiki page linked just below to try and get wireless working.
@@ -19,7 +19,7 @@ https://wiki.archlinux.org/title/iwd
 ---
 ## Index
 #### [Step One - Download, create USB and run installer ](#step-one)
-#### [Step Two](#step-two---install-drivers-and-apps)
+#### [Step Two Installing Drives/Other](#step-two---install-drivers-and-apps)
 #### [Install git](#git-1)
 #### [Install AUR Helper](#yay-aur-helper)
 #### [Fan Control](#macbook-fan---this-aids-in-controlling-the-fans-and-works-on-macbook-and-imac)
@@ -42,6 +42,7 @@ A USB flash drive of 4GB will be required. Once the ISO has downloaded and Etche
 Once complete, plug the drive into the iMac and power it on, press and hold the Option key (⌥) as soon as you hear the boot chime or when the screen initially goes grey. This will load a device selection, there should be an orange drive on the right hand side called EFI. Select this one and hit enter.
 
 The installer will now load and you should see the following prompt
+
 ![](/images/archprompt.png)
 
 Type ip a and hit enter and make sure you have an ip address. Simply now type 'archinstall' and hit enter. If an error is generated, referencing key databases, enter the following one line at a time
@@ -54,13 +55,13 @@ Then type archinstall again and hit enter. The installer script should load and 
 
 ![](/images/archinstall.png)
 
-You can now work through the options. I would suggest selcting world wide within the mirror list for now. This can be changed later once Arch is installed.
+You can now work through the options. I would suggest selecting world wide within the mirror list for now. This can be changed later once Arch is installed.
 
 For the bootloader, I would suggest Grub as systemd boot can be problematic, especially if you are dual booting with macOS or another operating system. 
 
 Create a root password and then a user account. Make sure to 'Confirm and Exit' after creating the user account, otherwise once the install has completed the root accoutn will be the only account setup.
 
-Set the profile to Minimul and audio to Pipewire
+Set the profile to Minimal and audio to Pipewire
 
 For the Kernel, select either 'linux' or 'linux-lts' at the time of writing the zen and hardened kernels resulted in boot loops.
 
@@ -74,7 +75,7 @@ Use the down arrow to select Install and kit enter.
 
 Once the install has completed, select No and then type reboot and hit enter.
 
-You should be greated by the Grub Bootlader, select *Arch Linux and hit enter or let the countdown finish and Arch will boot.
+You should be greeted by the Grub Bootlader, select *Arch Linux and hit enter or let the countdown finish and Arch will boot.
 
 ![](/images/grub.png)
 
@@ -99,11 +100,11 @@ Update the system by typing the following
 
 ## GIT
 
-In alacritty type the following, you may be promted for you password severl times
+In alacritty type the following, you may be prompted for you password severl times
 
     sudo pacman -S git -y
 
-Select Y or yes for any dependancies reauired
+Select Y or yes for any dependencies required
 
 ## YAY Aur Helper
 
