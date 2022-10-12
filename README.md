@@ -67,7 +67,7 @@ For the Kernel, select either 'linux' or 'linux-lts' at the time of writing the 
 
 in the additional packages enter the following making sure a space if between each package name.
 
-    xorg sddm plasma plackagekit-qt5 nano alacritty dolphin base-devel networkmanager firefox
+    xorg sddm plasma packagekit-qt5 nano alacritty dolphin base-devel networkmanager firefox
 
 This will install a base using KDE Plasma desktop environment, additional packages can be added here or later and further packages for hardware and function support are added below.
 
