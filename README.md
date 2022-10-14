@@ -188,7 +188,8 @@ In alacritty enter, line at a time
 
 In alacritty enter, line at a time
 
-    yay -S broadcom-wl
+    yay -S b43-firmware
+    yay -S broadcom-wl-dkms
     sudo systemctl enable networkmanager
     sudo systemctl start networkmanager
 
